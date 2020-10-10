@@ -11,7 +11,7 @@
    - '--image'
    - 'gcr.io/$PROJECT_ID/puedosalirdemadrid:$COMMIT_SHA'
    - '--region'
-   - 'europe-west2'
+   - 'europe-west1'
    - '--platform'
    - 'managed'
  images:
