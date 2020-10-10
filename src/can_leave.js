@@ -10,7 +10,9 @@ const noTexts = [
   "AUN NO",
   "AHORA NO",
   "NOPE",
-  "EN VALENCIA SI, AQUI NO"
+  "EN VALENCIA SI, AQUI NO",
+  "CASI PERO NO",
+  "SSSSSNO"
 ];
 
 function addNoText() {
