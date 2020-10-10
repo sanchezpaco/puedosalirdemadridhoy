@@ -4,6 +4,6 @@ ENV APP /app
 WORKDIR $APP
 
 COPY . $APP
-EXPOSE 8043
+EXPOSE 8080
 
-CMD ["-path", "/app"]
+CMD ["-port", "8080", "-path", "/app"]
