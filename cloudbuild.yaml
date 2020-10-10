@@ -1,0 +1,18 @@
+ steps:
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['build', '-t', 'gcr.io/$PROJECT_ID/puedosalirdemadrid:$COMMIT_SHA', '.']
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['push', 'gcr.io/$PROJECT_ID/puedosalirdemadrid:$COMMIT_SHA']
+ - name: 'gcr.io/cloud-builders/gcloud'
+   args:
+   - 'run'
+   - 'deploy'
+   - 'puedosalirdemadrid'
+   - '--image'
+   - 'gcr.io/$PROJECT_ID/puedosalirdemadrid:$COMMIT_SHA'
+   - '--region'
+   - 'europe-west2'
+   - '--platform'
+   - 'managed'
+ images:
+ - 'gcr.io/$PROJECT_ID/puedosalirdemadrid:$COMMIT_SHA'
