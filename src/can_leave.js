@@ -4,7 +4,13 @@ const noTexts = [
   "NO!!",
   "NOOOOOOOOO",
   "MMMMMM, NO",
-  "NO, INTENTELO DE NUEVO O MAS TARDE"
+  "NO, INTENTELO DE NUEVO O MAS TARDE",
+  "QUE NO!",
+  "JODER, QUE NO!",
+  "AUN NO",
+  "AHORA NO",
+  "NOPE",
+  "EN VALENCIA SI, AQUI NO"
 ];
 
 function addNoText() {
